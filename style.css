@@ -1,0 +1,31 @@
+.title {
+    border-bottom: 1px solid; 
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+article.progs {
+    width: 250px;
+}
+
+.progs img {
+    width: 25%;
+}
+
+.title-grid {
+    display:flex; 
+    justify-content: center;
+}
+
+#header {
+    border-bottom: 1px solid; 
+    margin-bottom: 20px;
+    position: sticky;
+    background-color: var(--pico-background-color);
+    top: 0;
+    z-index: 10;
+}
