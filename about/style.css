@@ -1,3 +1,8 @@
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .title {
     border-bottom: 1px solid; 
     padding-left: 20px;
@@ -19,6 +24,12 @@ article.progs {
 .title-grid {
     display:flex; 
     justify-content: center;
+}
+
+.subtitle {
+    border-bottom: 1px solid; 
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 #header {

@@ -20,3 +20,12 @@ article.progs {
     display:flex; 
     justify-content: center;
 }
+
+#header {
+    border-bottom: 1px solid; 
+    margin-bottom: 20px;
+    position: sticky;
+    background-color: var(--pico-background-color);
+    top: 0;
+    z-index: 10;
+}

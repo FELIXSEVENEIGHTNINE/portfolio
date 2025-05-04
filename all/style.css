@@ -1,3 +1,12 @@
+.main-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-container h1 {
+    text-align: center;
+}
+
 .title {
     border-bottom: 1px solid; 
     padding-left: 20px;
@@ -9,7 +18,7 @@
 }
 
 article.progs {
-    width: 400px;
+    width: 250px;
 }
 
 .progs img {
@@ -29,3 +38,7 @@ article.progs {
     top: 0;
     z-index: 10;
 }
+
+/* .progress-bg-warning::-webkit-progress-value {
+    background: Red;
+} */
