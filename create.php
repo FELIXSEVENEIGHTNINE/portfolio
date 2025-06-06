@@ -1,3 +1,11 @@
+<?php 
+    if(isset($_POST["submit"])) {
+        $dir = getcwd() . "/projects/";
+
+        $proj_type = $_POST["proj_type"];
+        $proj_name = $_POST["proj_name"];
+
+        $html_content = '
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -34,36 +42,22 @@
         <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
             <div class="grid">
                 <div>
-                    <h2>Vindina: Cloud Storage</h2> <hr>
+                    <h2>'.$proj_name.'</h2> <hr>
 
-                    <p>Vindina is a fake company that wants to create a cloud storage system for their consumers.</p>
-                    <p>While making the OFFGame project, my team found out we can access websites hosted in XAMPP by being in the same network as the server.</p>
-                    <p>This project does exactly that but for data storage.</p>
-
+                    <p></p>
+                    
                     <h4> Tools used: </h4> <hr>
                     <ul>
-                        <li>Bootstrap for the design to make it look professional.</li>
-                        <li>PHP for the backend to validate inputs from users.</li>
-                        <li>PHP connected to SQL to store the data entered by the user.</li>
-                        <li>XAMPP for the deployment.</li>
-                        <li>Second device that acts like the server.</li>
-                        <li>Local internet for anyone connected can access to it.</li>
+                        <li></li>
                     </ul>
 
                     <h4> Features: </h4> <hr>
                     <ul>
-                        <li>Local IP addresses are automatically stored. This is a positive for users who does not want to disconnect their sessions from the server.</li>
-                        <!-- <small>This is also a negative because local IP addresses can be changed.</small> -->
-
-                        <li>Users can store passwords, bookmarks, and files.</li>
-                        <li>Users can register and log in to retrieve their stuff.</li>
+                        <li></li>
                     </ul>
                 </div>
                 <div>
-                    <div>
-                        <img src="db.png">
-                        <h6>Entity Relationship Diagram</h6>
-                    </div>
+
                 </div>
             </div>
             
@@ -75,3 +69,57 @@
         </div>
     </body>
 </html>
+        ';
+
+        if ($proj_type == "personal") {
+            $dir = $dir . "p/";
+            $folder_count = countFolder("p", $dir);
+
+            file_put_contents($dir . $folder_count . ".html", $html_content);
+        }
+        else if ($proj_type == "school") {
+            $dir = $dir . "s/";
+            $folder_count = countFolder("s", $dir);
+            file_put_contents($dir . $folder_count . ".html", $html_content);
+        }
+        else {
+            echo "Choose a project type.";
+        }
+    }
+
+    function countFolder($type, $dir) {
+        $filecount = 0;
+
+        if ($type == "s") {
+            $files2 = glob( $dir . "*");
+            if($files2) {
+                $filecount = count($files2);
+            }
+
+            return $filecount;
+        }
+
+        else if ($type == "p") {
+            $files2 = glob( $dir . "*");
+            if($files2) {
+                $filecount = count($files2);
+            }
+
+            return $filecount;
+        }
+    }
+
+?>
+<form method="POST">
+    <input type="radio" id="personal" name="proj_type" value="personal">
+    <label for="personal">Personal</label><br>
+    <input type="radio" id="school" name="proj_type" value="school">
+    <label for="school">School</label><br>
+
+    <input type="text" placeholder="Enter project name" name="proj_name"><br>
+    <!-- <textarea placeholder="" name="proj_para"></textarea>
+
+    <input type="text" placeholder="Enter content" name="proj_para"><br> -->
+
+    <input type="submit" name="submit">
+</form>
