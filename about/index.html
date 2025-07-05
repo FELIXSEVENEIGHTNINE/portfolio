@@ -4,47 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>Raffers</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <script src="index.js"></script>
+        <title>Rafael's Ranking</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="container-fluid" id="header">
+        <header>
+            <nav></nav>
             <nav>
-                <ul>
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../projects/">Projects</a></li>
-                    <li><a href="./" style="text-decoration: underline;">About</a></li>
-                </ul>
-                <ul>
-                    
-                </ul>
-                <ul>
-                    <li><a href="../">Full Stack</a></li>
-                    <li><a href="../level.htm">Level Design</a></li>
-                </ul>
+                <a href="../" onclick="moveToHome(this)">Home</a>
+                <a href="../projects/" onclick="moveToProjects(this)">My Projects</a>
+                <a href="./" onclick="moveToAbout(this)" class="active-link">About Me</a>
             </nav>
-        </div>
-        <div class="container" style="padding-top:2%; padding-bottom: 2%;">
+            <nav></nav>
+        </header>
+
+        <div id="web-about">
             <h2 class="subtitle">About Me</h2>
             <div>
                 <p style="text-align: justify;">
                     Hello! I'm Rafael. You can call me Raf. I'm an undergraduate Computer Science student in Mapua University that specializes in Application Development.
-                </p>
-                <p style="text-align: justify; text-indent: 2.5%;">
-                    I play a lot of games not only for fun but to also learn about different game designs done by games.
-                </p>
-                <p style="text-align: justify; text-indent: 2.5%;">
-                    I design different websites in my spare time to keep me updated on different trending designs.
-                </p>
-                <p style="text-align: justify; text-indent: 2.5%;">
-                    I listen to a variety of music... a lot. 
-                </p>
-                <p style="text-align: justify; text-indent: 2.5%;">
-                    Recently, I've had a liking to walking to different places I've never been before.
                 </p>
             </div>
 
@@ -68,10 +47,8 @@
                     darafferz@gmail.com
                 </div></a>
             </div>
-        </div>
 
-
-        <div id="padding" style="padding:2%"></div>
+            <div id="padding" style="padding:2%"></div>
 
         <div class="container">
             <h2 class="subtitle"> Education</h2>
@@ -89,7 +66,34 @@
                     Digital Media and Technology (DMT) Strand <br>
                 </p>
             </hgroup>
+        </div>
 
+        <div id="padding" style="padding:2%"></div>
+
+        <div class="container">
+            <h2 class="subtitle"> Hobbies </h2>
+            <p style="text-align: justify;">
+                    I play a lot of games not only for fun but to also learn about different game designs done by games. I'm currently playing Deep Rock Galactic.
+                </p>
+                <!-- <p style="text-align: justify; text-indent: 2.5%;">
+                    I design different websites in my spare time to keep me updated on different trending designs.
+                </p> -->
+                <p style="text-align: justify;">
+                    I listen to a variety of music... a lot. Particularly dubstep/EDM, Pop, and many others. I like to have different moods for different situations. Some music artists are Cup of Joe, Lola Amour, ISOxo and Knock2.
+                </p>
+                <p style="text-align: justify;">
+                    I also watch movies and series from time to time. The recent ones were Breaking Bad, Better Call Saul, and El Camino. Binged watched it for a month. 
+                    I'm also waiting for Good Omens Season 3 because THEY CAN'T JUST END IT LIKE THAT!
+                </p>
+                <!-- <p style="text-align: justify; text-indent: 2.5%;">
+                    Recently, I've had a liking to walking to different places I've never been before.
+                </p> -->
+        </div>
+
+        <div id="padding" style="padding:2%"></div>
+
+        
+        <div class="container">
             <h2 class="subtitle"> Work</h2>
             <hgroup>
                 <h5>company name | <small> date </small></h5>
@@ -98,12 +102,20 @@
                 </p>
             </hgroup>
         </div>
+        </div>
+
+
+        
 
         <div id="padding" style="padding:2%"></div>
 
-        <div class="container-fluid" id="footer" style="text-align: center;">
-            <small><i>Icon credits go to <a href="https://devicon.dev/">Devicon</a> and <a href="https://icongr.am/devicon">Icongram</a>.</i></small> <br>
+        <footer id="footer">
+            <div class="footer-email">
+                <img src="https://icongr.am/octicons/mail.svg?size=128&color=currentColor" style="width: 30px; filter: invert(1);"/>
+                darafferz@gmail.com
+            </div>
+            <small><i class="footer-credits">Icon credits go to <a href="https://devicon.dev/">Devicon</a> and <a href="https://icongr.am/devicon">Icongram</a>.</i></small> <br>
             <small><i>2018 - 2025</i></small>
-        </div>
+        </footer>
     </body>
 </html>
