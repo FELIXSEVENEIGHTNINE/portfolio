@@ -5,83 +5,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Raffers</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="container-fluid" id="header">
+        <header>
+            <nav></nav>
             <nav>
-                <ul>
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="../" style="text-decoration: underline;">Projects</a></li>
-                    <li><a href="../../about/">About</a></li>
-                </ul>
-                <ul>
-                    
-                </ul>
-                <ul>
-                    <li><a href="../../">Full Stack</a></li>
-                    <li><a href="../../level.htm">Level Design</a></li>
-                </ul>
+                <a href="../" onclick="moveToHome(this)">Home</a>
+                <a href="./" onclick="moveToProjects(this)" class="active-link">My Projects</a>
+                <a href="../about/" onclick="moveToAbout(this)">About Me</a>
             </nav>
-        </div>
-        <div class="container-fluid" style="position: sticky; top: 75px; padding-top: 10px; padding-bottom: 10px;">
-            <a href="javascript:history.back()"><button class="outline">Back</button></a>
-        </div>
+            <nav></nav>
+        </header>
 
-        <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
-            <div class="grid">
-                <div>
-                    <h2>OFFGame</h2> <hr>
-                    <p><small><i>Final project for ITS122L Web Systems and Technologies 2 AND <br> 
-                        ITS120L Application Development and Emerging Technologies</i></small></p>
-
-                    <p>OFFGames is a small company that sells games. They have a website called OFFGame that sells offline games.</p>
-                    <p>This project introduced me to an extensive use of Bootstrap, Data Management on SQL, and using APIs for the website and for the AI.</p>
-                    <p>The website is hosted locally on my device while the AI is hosted locally on a group member's device. We used the same network to connect the AI to the website.</p>
-                    <p>We, the developers, made a working gamified advertisement of Five Nights at Freddy's (cannot be sold for lawful reasons) with an achievement system and other minigames.</p>
-                    <p>The project was used for two different courses.</p>
-
-                    <h4> Tools used: </h4> <hr>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                        <li>PHP</li>
-                        <li>Figma</li>
-                        <li>XAMPP</li>
-                        <li>Python</li>
-                        <li>AI chatbot and recommendation system uses Ollama</li>
-                    </ul>
-
-                    <h4> Features: </h4> <hr>
-                    <ul>
-                        <li>Users can log in, register, and log out.</li>
-                        <li>Users can view and edit their profile.</li>
-                        <li>Users have a wallet which they can purchase games.</li>
-                        <li>Users can use a chatbot to recommend games for them.</li>
-                        <li>Users can also use a simple recommendation system that gives them 10 games from genres they chose from.</li>
-
-                        <br>
-                        <li>A hidden admin page for the admin to only view who are the users in the website.</li>
-
-                        <br>
-                        <li>An achievement system for the gamified advertisement.</li>
-
-                        <br>
-                        <li>Mobile compatable using any browser.</li>
-                    </ul>
-                </div>
-                <div>
-
-                </div>
+        <main id="project-content">
+            <div class="back-button-container">
+                <a href="javascript:history.back()"><button>Back</button></a>
             </div>
-            
-        </div>
+            <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
+                <div class="grid">
+                    <div>
+                        <h2>OFFGame</h2> <hr>
+                        <p><small><i>Final project for ITS122L Web Systems and Technologies 2 AND <br> 
+                            ITS120L Application Development and Emerging Technologies</i></small></p>
 
-        <div class="container-fluid" id="footer">
-        </div>
+                        <p>OFFGames is a small company that sells games. They have a website called OFFGame that sells offline games.</p>
+                        <p>This project introduced me to an extensive use of Bootstrap, Data Management on SQL, and using APIs for the website and for the AI.</p>
+                        <p>The website is hosted locally on my device while the AI is hosted locally on a group member's device. We used the same network to connect the AI to the website.</p>
+                        <p>We, the developers, made a working gamified advertisement of Five Nights at Freddy's (cannot be sold for lawful reasons) with an achievement system and other minigames.</p>
+                        <p>The project was used for two different courses. I became the project manager, front-end developer, and database architect.</p>
+
+                        <h4> Tools used: </h4> <hr>
+                        <ul>
+                            <li>Javascript for the gamified advertisement</li>
+                            <li>Bootstrap for the design</li>
+                            <li>PHP</li>
+                            <li>Figma for design</li>
+                            <li>XAMPP for local deployment</li>
+                            <li>Python for AI</li>
+                            <li>AI chatbot and recommendation system uses Ollama</li>
+                        </ul>
+
+                        <h4> Features: </h4> <hr>
+                        <ul>
+                            <li>Users can log in, register, and log out.</li>
+                            <li>Users can view and edit their profile.</li>
+                            <li>Users have a wallet which they can purchase games.</li>
+                            <li>Users can use a chatbot to recommend games for them.</li>
+                            <li>Users can also use a simple recommendation system that gives them 10 games from genres they chose from.</li>
+
+                            <br>
+                            <li>A hidden admin page for the admin to only view who are the users in the website.</li>
+
+                            <br>
+                            <li>An achievement system for the gamified advertisement.</li>
+
+                            <br>
+                            <li>Mobile compatable using any browser.</li>
+                        </ul>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-email">
+                <img src="https://icongr.am/octicons/mail.svg?size=128&color=currentColor" style="width: 30px; filter: invert(1);"/>
+                darafferz@gmail.com
+            </div>
+            <small><i class="footer-credits">Icon credits go to <a href="https://devicon.dev/">Devicon</a> and <a href="https://icongr.am/devicon">Icongram</a>.</i></small> <br>
+            <small><i>2018 - 2025</i></small>
+        </footer>
     </body>
 </html>

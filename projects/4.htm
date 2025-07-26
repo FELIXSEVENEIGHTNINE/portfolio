@@ -9,55 +9,56 @@
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="container-fluid" id="header">
+        <header>
+            <nav></nav>
             <nav>
-                <ul>
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="../" style="text-decoration: underline;">Projects</a></li>
-                    <li><a href="../../about/">About</a></li>
-                </ul>
-                <ul>
-                    
-                </ul>
-                <ul>
-                    <li><a href="../../">Full Stack</a></li>
-                    <li><a href="../../level.htm">Level Design</a></li>
-                </ul>
+                <a href="../" onclick="moveToHome(this)">Home</a>
+                <a href="./" onclick="moveToProjects(this)" class="active-link">My Projects</a>
+                <a href="../about/" onclick="moveToAbout(this)">About Me</a>
             </nav>
-        </div>
-        <div class="container-fluid" style="position: sticky; top: 75px; padding-top: 10px; padding-bottom: 10px;">
-            <a href="javascript:history.back()"><button class="outline">Back</button></a>
-        </div>
+            <nav></nav>
+        </header>
 
-        <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
-            <div class="grid">
-                <div>
-                    <h2>Guitar Hero E-Commerce</h2> <hr>
-                    <p><small><i>Final project for ITS181-2 Application Development 2</i></small></p>
-
-                    
-
-                    <h4> Tools used: </h4> <hr>
-                    <ul>
-                        <li>AngularJS</li>
-                        <li>Bootstrap</li>
-                        <li>Spring Boot</li>
-                        <li>Docker</li>
-                    </ul>
-
-                    <h4> Features: </h4> <hr>
-                    <ul>
-                       
-                    </ul>
-                </div>
-                <div>
-
-                </div>
+        <main id="project-content">
+            <div class="back-button-container">
+                <a href="javascript:history.back()"><button>Back</button></a>
             </div>
-            
-        </div>
+            <div class="container" style="padding-top: 1%; padding-bottom: 1%;">
+                <div class="grid">
+                    <div>
+                        <h2>Guitar Hero E-Commerce</h2> <hr>
+                        <p><small><i>Final project for ITS181-2 Application Development 2</i></small></p>
 
-        <div class="container-fluid" id="footer">
-        </div>
+                        
+
+                        <h4> Tools used: </h4> <hr>
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>Bootstrap</li>
+                            <li>Spring Boot</li>
+                            <li>Docker</li>
+                        </ul>
+
+                        <h4> Features: </h4> <hr>
+                        <ul>
+                            <li>Users can register and log in</li>
+                        </ul>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-email">
+                <img src="https://icongr.am/octicons/mail.svg?size=128&color=currentColor" style="width: 30px; filter: invert(1);"/>
+                darafferz@gmail.com
+            </div>
+            <small><i class="footer-credits">Icon credits go to <a href="https://devicon.dev/">Devicon</a> and <a href="https://icongr.am/devicon">Icongram</a>.</i></small> <br>
+            <small><i>2018 - 2025</i></small>
+        </footer>
     </body>
 </html>

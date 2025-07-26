@@ -407,3 +407,12 @@ a.project-list-link {
 .image-container img{
     width: 100%;
 }
+
+hgroup p {
+    padding-left: 2%;
+    margin-top: -2%;
+}
+
+hgroup p small {
+    /* border: 1px solid; */
+}
