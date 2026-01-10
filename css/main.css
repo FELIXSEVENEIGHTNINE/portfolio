@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Kanit;
+    background-color: #151530;
+    color: White;
+    margin: 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 20px;
+    /* font-size: calc(20px + 1.5vw); */
+
+    min-height: 100vh;
+    margin-bottom: 10%;
+}
+
+a {
+    color: White;
+    text-decoration: none;
+}
+
+header {
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+header nav {
+    border: 0px solid;
+}
+
+header nav a {
+    gap: 10px;
+    margin: 0px 20px;
+}
+
+.main-left {
+    width: 50%;
+}
+
+.main-right {
+    width: 50%;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+
+.links a {
+    margin: 0px 30px 0px 0px;
+}
+
+.link-button {
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.tech-stack a {
+    display: flex;
+    gap: 5px;
+    /* border: 1px solid; */
+    align-items: center;
+    padding: 0px 15px;
+    margin: 15px 0px;
+}
+
+.tech-stack a svg {
+    width: 48px;
+    height: 48px;
+}
+
+.work-container {
+    /* border: 1px solid; */
+    padding: 0px 10px;
+}
+
+.work-container p {
+    margin-top: 0px;
+    
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.project {
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tech-stack p {
+    /* border: 1px solid; */
+    text-align: center;
+    background-color: #303045;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
