@@ -6,9 +6,7 @@ body {
     font-family: Kanit;
     background-color: #151530;
     color: White;
-    margin: 0px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 0% 25% 0% 25%;;
     font-size: 20px;
     /* font-size: calc(20px + 1.5vw); */
 
@@ -19,6 +17,36 @@ body {
 a {
     color: White;
     text-decoration: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.75;
+}
+
+p.p-lang-primary {
+    background-color: #000791;
+}
+
+/* assume secondary */
+p.p-lang {
+    background-color: #303045;
+}
+
+p.p-tool {
+    /* background-color: #000791; */
+    /* background-color: #2F2F91; */
+    background-color: #49496F;
+}
+
+.p-ai {
+    background-color: #910000;
+}
+
+b small {
+    font-weight: 300;
+    font-size: 14px;
 }
 
 header {
@@ -101,16 +129,40 @@ hr {
     border-radius: 8px;
 }
 
-.project-tech-stack {
+.project-tech-stack, .project-links {
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
+}
+
+.project-links .github {
+    text-align: center;
+    background-color: #F0F0F0;
+    color: Black;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.project-links .live-project {
+    text-align: center;
+    background-color: #f0f0f0;
+    color: Black;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 .project-tech-stack p {
     /* border: 1px solid; */
     text-align: center;
-    background-color: #303045;
     border-radius: 8px;
     font-size: 14px;
     padding: 5px 10px;
+}
+
+.button-link {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px 20px 5px 20px;
 }

@@ -4,6 +4,10 @@
     font-size: 54px;
 }
 
+.font-less {
+    font-size: 14px;
+}
+
 .font-bold {
     font-size: 30px;
 }

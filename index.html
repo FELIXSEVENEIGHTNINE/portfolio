@@ -20,13 +20,13 @@
             <nav>
                 <a href="./">Home</a>
                 <a href="./projects.html">My Projects</a>
-                <a href="./about.html">About Me</a>
+                <!-- <a href="./about.html">About Me</a> -->
             </nav>
 
             <nav>
-                <a href="#intro" class="text-opacity-08">Intro</a>
-                <a href="#work" class="text-opacity-08">Work</a>
-                <a href="#projects" class="text-opacity-08">Projects</a>
+                <a href="#intro" class="text-opacity-08 font-less">Intro</a>
+                <a href="#work" class="text-opacity-08 font-less">Work</a>
+                <a href="#projects" class="text-opacity-08 font-less">Projects</a>
             </nav>
         </header>
         <main>
@@ -35,18 +35,20 @@
                     <div class="main-left">
                         <p class="font-xlarge">I'm Rafael!</p>
                         <div style="display: flex; flex-direction: row; gap: 8px;">
-                            <p class="text-opacity-08">A PHP developer from the </p> 
+                            <p class="text-opacity-08">A <b><u>PHP developer</u></b> from the </p> 
                             <span class="fi fi-ph"></span> 
                             <p class="text-opacity-08">Philippines</p>
                         </div>
                         <p class="text-opacity-08">A Computer Science graduate from Mapua University</p>
-                        <p class="text-opacity-08">Developing applications with real-world scenarios</p>
-                        <p class="text-opacity-08">Also developed games and levels</p>
+                        <p class="text-opacity-08">Developing sites with real-world scenarios</p>
+                        <p class="text-opacity-08">Also develops small games</p>
                     </div>
                     <div class="main-right">
                         
                     </div>
                 </div>
+
+                <div class="padding-div-02"></div>
                 
                 <div class="links">
                     <a href="" class="link-button">
@@ -109,7 +111,21 @@
                         </svg>
                         PostreSQL
                     </a>
-                    <a href="">XAMPP</a>
+                    <a>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#0acf83" d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"></path><path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"></path><path fill="#f24e1e" d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"></path><path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"></path><path fill="#1abcfe" d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"></path>
+                        </svg>
+                        Figma
+                    </a>
+                    <!-- <a>
+                        XAMPP
+                    </a> -->
+                    <!-- <a>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#FFF" d="m115.679 69.288-15.591-8.94-2.689-1.163-63.781.436v32.381h82.061z"></path><path fill="#F38020" d="M87.295 89.022c.763-2.617.472-5.015-.8-6.796-1.163-1.635-3.125-2.58-5.488-2.689l-44.737-.581c-.291 0-.545-.145-.691-.363s-.182-.509-.109-.8c.145-.436.581-.763 1.054-.8l45.137-.581c5.342-.254 11.157-4.579 13.192-9.885l2.58-6.723c.109-.291.145-.581.073-.872-2.906-13.158-14.644-22.97-28.672-22.97-12.938 0-23.913 8.359-27.838 19.952a13.35 13.35 0 0 0-9.267-2.58c-6.215.618-11.193 5.597-11.811 11.811-.145 1.599-.036 3.162.327 4.615C10.104 70.051 2 78.337 2 88.549c0 .909.073 1.817.182 2.726a.895.895 0 0 0 .872.763h82.57c.472 0 .909-.327 1.054-.8l.617-2.216z"></path><path fill="#FAAE40" d="M101.542 60.275c-.4 0-.836 0-1.236.036-.291 0-.545.218-.654.509l-1.744 6.069c-.763 2.617-.472 5.015.8 6.796 1.163 1.635 3.125 2.58 5.488 2.689l9.522.581c.291 0 .545.145.691.363.145.218.182.545.109.8-.145.436-.581.763-1.054.8l-9.924.582c-5.379.254-11.157 4.579-13.192 9.885l-.727 1.853c-.145.363.109.727.509.727h34.089c.4 0 .763-.254.872-.654.581-2.108.909-4.325.909-6.614 0-13.447-10.975-24.422-24.458-24.422"></path>
+                        </svg>
+                        Cloudflare Tunnel
+                    </a> -->
                 </div>
             </div>
 
@@ -129,42 +145,40 @@
                 </div>
             </div>
 
+            <div class="padding-div-05"></div>
+
             <div id="projects">
                 <b class="font-bold">Featured Projects</b>
                 <hr>
                 <div class="project-container">
-                    <div><a href=""><div class="project">
-                        <b>Vindina</b>
+                    <div class="project">
+                        <b>Vindina <small>2025</small></b>
                         <p>An ecosystem of tools that includes a password manager, bookmarks manager, and file storage.</p>
                         <div class="project-tech-stack">
-                            <p> PHP </p>
-                            <p> Javascript </p>
-                            <p> AJAX </p>
-                            <p> MySQL </p>
+                            <p class="p-lang-primary"> PHP </p>
+                            <p class="p-lang"> Javascript </p>
+                            <p class="p-lang"> AJAX </p>
+                            <p class="p-lang"> MySQL </p>
                         </div>
-                    </div></a></div>
+                        <div class="project-links">
+                            <a href="" class="github disabled" target="_blank"> GitHub </a>
+                        </div>
+                    </div>
 
-                    <div><a href=""><div class="project">
-                        <b>OFFGame</b>
+                    <div class="project">
+                        <b>OFFGame <small>2025</small></b>
                         <p>A digital distribution service and storefront where all kinds of games are noticed.</p>
                         <div class="project-tech-stack">
-                            <p> PHP </p>
-                            <p> Javascript </p>
-                            <p> Python </p>
-                            <p> MySQL </p>
+                            <p class="p-lang-primary"> PHP </p>
+                            <p class="p-lang"> Javascript </p>
+                            <p class="p-lang"> Python </p>
+                            <!-- <p class="p-tool"> Ollama </p> -->
+                            <p class="p-lang"> MySQL </p>
                         </div>
-                    </div></a></div>
-
-                    <div><a href=""><div class="project">
-                        <b>Vindina</b>
-                        <p>An ecosystem of tools that includes a password manager, bookmarks manager, and file storage.</p>
-                        <div class="project-tech-stack">
-                            <p> PHP </p>
-                            <p> Javascript </p>
-                            <p> AJAX </p>
-                            <p> MySQL </p>
+                        <div class="project-links">
+                            <a href="https://github.com/FELIXSEVENEIGHTNINE/offgame" class="github" target="_blank"> GitHub </a>
                         </div>
-                    </div></a></div>
+                    </div>
                 </div>
             </div>
         </main>
