@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #333,
+    #333 2px,
+    transparent 2px,
+    transparent 10px
+  );
+  background-size: 20px 20px;
+  animation: moveLines 2s linear infinite;
+}
+
+@keyframes moveLines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 20px 20px;
+  }
+}
