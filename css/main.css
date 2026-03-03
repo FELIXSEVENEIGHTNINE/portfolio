@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+footer {
+    padding-top: 20%;
+}
+
 body {
     font-family: Kanit;
     background-color: #151530;
@@ -86,18 +90,31 @@ p.p-lang-primary {
 }
 
 /* assume secondary */
-p.p-lang {
+p.p-lang, p.p-tool {
     background-color: #303045;
 }
 
-p.p-tool {
+p.p-comm {
+    background-color: #222791;
+}
+
+p.laravel::before {
+    content: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg');
+    display: inline-block;
+}
+
+/* p.p-tool { */
     /* background-color: #000791; */
     /* background-color: #2F2F91; */
-    background-color: #49496F;
-}
+    /* background-color: #49496F; */
+/* } */
 
 .p-ai {
     background-color: #910000;
+}
+
+.p-warning {
+    background-color: #DADA0099;
 }
 
 b small {
