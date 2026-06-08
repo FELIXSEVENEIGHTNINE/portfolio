@@ -20,6 +20,10 @@
     opacity: 0.8;
 }
 
+a .text-opacity-10 {
+    opacity: 1;
+}
+
 .padding-div-01 {
     padding: 1%;
 }

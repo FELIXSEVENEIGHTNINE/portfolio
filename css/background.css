@@ -1,6 +1,10 @@
-body {
+/* body {
   margin: 0;
   height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: repeating-linear-gradient(
     45deg,
     #333,
@@ -9,7 +13,7 @@ body {
     transparent 10px
   );
   background-size: 20px 20px;
-  animation: moveLines 2s linear infinite;
+  animation: moveLines 10s linear infinite;
 }
 
 @keyframes moveLines {
@@ -19,4 +23,67 @@ body {
   to {
     background-position: 20px 20px;
   }
+} */
+
+body {
+
+    /* margin: 0; */
+    /* height: 100vh; */
+    /* background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 30px
+    ); */
+    /* background-image: radial-gradient(
+        circle,
+        rgba(255,255,255,0.15) 1px,
+        transparent 1px
+    ); */
+
+    /* background-size: 40px 40px; */
+    /* animation: moveLines 4s linear infinite; */
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px);
+
+    background-size:
+        60px 60px,
+        90px 90px,
+        140px 140px;
+    
+    background-position:
+        0 0,
+        30px 50px,
+        70px 20px;
+
+    animation: moveDots 3s linear infinite;
+}
+
+/* @keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 0px 40px; }
+} */
+
+@keyframes moveDots {
+    from {
+        background-position:
+            0 0,
+            30px 50px,
+            70px 20px;
+    }
+    to {
+        background-position:
+            -60px 60px,
+            120px 140px,
+            210px 160px;
+    }
 }

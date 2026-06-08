@@ -2,76 +2,26 @@ html {
     scroll-behavior: smooth;
 }
 
-footer {
-    padding-top: 20%;
-}
-
 body {
     font-family: Kanit;
     background-color: #151530;
     color: White;
-    margin: 0% 25%;
+    margin: 0% 22%;
     font-size: 20px;
     /* font-size: calc(20px + 1.5vw); */
 
     min-height: 100vh;
-    padding-bottom: 10%;
-
-    /* margin: 0; */
-    /* height: 100vh; */
-    /* background-image: repeating-linear-gradient(
-        0deg,
-        rgba(255,255,255,0.08),
-        rgba(255,255,255,0.08) 1px,
-        transparent 1px,
-        transparent 30px
-    ); */
-    /* background-image: radial-gradient(
-        circle,
-        rgba(255,255,255,0.15) 1px,
-        transparent 1px
-    ); */
-
-    /* background-size: 40px 40px; */
-    /* animation: moveLines 4s linear infinite; */
-
-
-    background-image:
-        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,255,255,0.30) 1px, transparent 1px);
-
-    background-size:
-        60px 60px,
-        90px 90px,
-        140px 140px;
-    
-    background-position:
-        0 0,
-        30px 50px,
-        70px 20px;
-
-    animation: moveDots 3s linear infinite;
+    padding-bottom: 0%;
 }
 
-/* @keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 0px 40px; }
-} */
+footer {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    text-align: center;
+}
 
-@keyframes moveDots {
-    from {
-        background-position:
-            0 0,
-            30px 50px,
-            70px 20px;
-    }
-    to {
-        background-position:
-            -60px 60px,
-            120px 140px,
-            210px 160px;
-    }
+footer small {
+    font-size: 12px;
 }
 
 a {
@@ -90,31 +40,18 @@ p.p-lang-primary {
 }
 
 /* assume secondary */
-p.p-lang, p.p-tool {
+p.p-lang {
     background-color: #303045;
 }
 
-p.p-comm {
-    background-color: #222791;
-}
-
-p.laravel::before {
-    content: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg');
-    display: inline-block;
-}
-
-/* p.p-tool { */
+p.p-tool {
     /* background-color: #000791; */
     /* background-color: #2F2F91; */
-    /* background-color: #49496F; */
-/* } */
+    background-color: #49496F;
+}
 
 .p-ai {
     background-color: #910000;
-}
-
-.p-warning {
-    background-color: #DADA0099;
 }
 
 b small {
@@ -163,21 +100,24 @@ hr {
 
 .tech-stack {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .tech-stack a {
     display: flex;
-    gap: 5px;
-    /* border: 1px solid; */
+    font-size: 20px;
+    background-color: #1e1e39;
+    border-radius: .3em;
+    gap: 7%;
+    border: 1px solid;
     align-items: center;
-    padding: 0px 15px;
-    margin: 15px 0px;
+    padding: 3% 5%;
+    margin: 2% 2%;
 }
 
 .tech-stack a svg {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 
 .work-container {
@@ -201,13 +141,14 @@ hr {
 .project {
     border: 1px solid;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: .7em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* position: relative; */
 
-    background-color: #1e1e39;
+    /* background-color: #1e1e39; */
+    background-color: #151530;
     
 }
 
